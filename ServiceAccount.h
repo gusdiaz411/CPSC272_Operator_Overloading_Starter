@@ -1,7 +1,7 @@
 //
-// Created by Christopher Vaughn
-// Date: 9/15/25
-// Project: 272 Forking & Overloading Exercise
+// Created by Gustavo Diaz
+// Date: 9/22/25
+// Class: CPSC272
 //
 
 #ifndef CPSC272_OPERATOR_OVERLOADING_STARTER_SERVICEACCOUNT_H
@@ -75,6 +75,7 @@ public:
      * @note Prints error message if balance is negative
      */
     void setBalance(double);
+    bool operator<(const ServiceAccount& rhs) const;
 };
 
 /**

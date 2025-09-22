@@ -1,7 +1,7 @@
 //
-// Created by Christopher Vaughn
-// Date: 9/15/25
-// Project: 272 Forking & Overloading Exercise
+// Created by Gustavo Diaz
+// Date: 9/22/25
+// Class: CPSC272
 //
 #include "ServiceAccount.h"
 #include <iostream>
@@ -122,6 +122,11 @@ bool operator==(const ServiceAccount& a, const ServiceAccount& b) {
 bool operator>(const ServiceAccount& a, const ServiceAccount& b) {
     return a.getBalance() > b.getBalance();
 }
+
+bool ServiceAccount::operator<(const ServiceAccount& rhs) const {
+    return this->accountBalance < rhs.accountBalance;
+}
+
 
 
 
